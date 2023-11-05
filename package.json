@@ -1,0 +1,32 @@
+{
+  "name": "api-salta-de-turno",
+  "version": "0.0.0",
+  "description": "Api crud para consumir en el proyecto Salta de turno",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --watch .",
+    "start": "node ./server.js",
+    "dev": "nodemon ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AgusChio/API-SaltaDeTurno.git"
+  },
+  "keywords": [
+    "nodejs",
+    "backend",
+    "entorno de desarrollo"
+  ],
+  "author": "Equipo verde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AgusChio/API-SaltaDeTurno/issues"
+  },
+  "homepage": "https://github.com/AgusChio/API-SaltaDeTurno#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.0"
+  }
+}
