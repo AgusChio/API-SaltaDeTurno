@@ -13,7 +13,7 @@ const authRouter = {
 
             const user = userDTO(userInDB)
 
-            const token = userService.generateToken( userInDB.email )
+            const token = userService.generateToken(userInDB.email)
 
             return res.status(200).json({ "message": "Login successful.", user, token })
         } catch (error) {
@@ -48,25 +48,25 @@ const authRouter = {
     },
     async loginWithToken(req, res) {
         const user = userDTO(req.user)
-        return res.status(200).json({ "message": "Login successful.", user})
+        return res.status(200).json({ "message": "Login successful.", user })
     },
 
-    async generateApiKey(req, res){
+    async generateApiKey(req, res) {
         try {
             const apiKey = userService.generateKey()
-            const updateUser = userService.update( req.user._id, {apiKey} )
-            if( updateUser ){
-               return res.status(201).json( { api_key : apiKey } )
+            const updateUser = userService.update(req.user._id, { apiKey })
+            if (updateUser) {
+                return res.status(201).json({ api_key: apiKey })
             }
-            return res.status(400).json( {message : ''} )
+            return res.status(400).json({ message: '' })
         } catch (error) {
             return res.status(500).json({ error })
         }
     },
-    async getApiKey(req, res){
+    async getApiKey(req, res) {
         try {
-           const user = await userService.getUserByEmail( req.user.email )
-           res.status(200).json( { api_key : user.apiKey } )
+            const user = await userService.getUserByEmail(req.user.email)
+            res.status(200).json({ api_key: user.apiKey })
         } catch (error) {
             return res.status(500).json({ error })
         }

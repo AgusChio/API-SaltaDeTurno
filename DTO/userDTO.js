@@ -1,7 +1,7 @@
-const userDTO = (obj) => {
+const userDTO = (user) => {
     return {
-        name: obj.name,
-        email: obj.email
+        name: user.name,
+        email: user.email
     }
 }
 
