@@ -7,6 +7,7 @@ const farmaciaSchema = new mongoose.Schema({
     maps: { type: String, required: true },
     horario: { type: String, required: true },
     imagen: { type: String, required: true },
+    zona: { type: String, required: true },
 });
 
 const Farmacia = mongoose.model('Farmacia', farmaciaSchema);
