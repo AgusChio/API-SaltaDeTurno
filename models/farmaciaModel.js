@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+
 
 const farmaciaSchema = new mongoose.Schema({
     nombre: { type: String, required: true },

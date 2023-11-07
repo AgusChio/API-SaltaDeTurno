@@ -7,7 +7,8 @@ const userSchema = new mongoose.Schema({
     status: { type: Boolean, default: false },
     google: { type: Boolean, default: false },
     apiKey: { type: String, default: '' },
-    rol: { type: String, default: 'user' }
+    rol: { type: String, default: 'user' },
+    modoOscuro: { type: Boolean, default: false }
 });
 
 const User = mongoose.model('User', userSchema);
