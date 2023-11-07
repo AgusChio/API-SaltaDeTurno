@@ -4,16 +4,13 @@ const farmaciaSchema = new mongoose.Schema({
     nombre: { type: String, required: true },
     direccion: { type: String, required: true },
     telefono: { type: String, required: true },
-    maps: { type: String, required: true },
-    horario: [{
-        dias: [{ type: String, required: true }],
-        horarios: [{
-            apertura: { type: String, required: true },
-            cierre: { type: String, required: true }
-        }]
-    }],
-    turno: {type: Date, required: true},
-    deTurno: { type: Boolean, default: false },
+    ubicacion: { type: String, required: true },
+    aperturaMañana: { type: String, required: false },
+    cierreMedioDia: { type: String, required: false },
+    aperturaTarde: { type: String, required: false },
+    cierreNocturno: { type: String, required: false },
+    abierto24Horas: { type: Boolean, default: false },
+    deTurno24Horas: {type: Date, required: true},
     imagen: { type: String, required: true },
     Zona: { 
         type: String, 
