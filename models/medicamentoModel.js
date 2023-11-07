@@ -7,7 +7,11 @@ const medicamentoSchema = new mongoose.Schema({
     presentacion: { type: String, required: true },
     cantidad: { type: String, required: true },
     codigoNacional: { type: String, required: true },
-    categoria: { type: String, required: true },
+    categoria: { 
+        type: String, 
+        required: true, 
+        enum: ['Venta libre', 'Bajo receta']
+    },
 });
 
 const Medicamento = mongoose.model('Medicamento', medicamentoSchema);
