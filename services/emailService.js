@@ -34,7 +34,7 @@ export const sendEmail = async (email, code) => {
             to: email,
             subject: 'Verify account',
             html: `
-                <h1> API MOVIES MH </h1>
+                <h1> Salta de Turno </h1>
                 <a href="http://localhost:5173/verify?code=${code}"> verify account </a>
             `
         }
