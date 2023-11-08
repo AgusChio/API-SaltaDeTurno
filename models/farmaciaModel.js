@@ -1,4 +1,4 @@
-
+import mongoose from "mongoose";
 
 const farmaciaSchema = new mongoose.Schema({
     nombre: { type: String, required: true },
@@ -19,7 +19,7 @@ const farmaciaSchema = new mongoose.Schema({
     },
     abierto24Horas: { type: Boolean, default: false },
     deTurno24Horas: { type: Date, required: true },
-    imagen: { type: String, required: true },
+    imagen: { type: String, required: false },
     Zona: {
         type: String,
         required: true,

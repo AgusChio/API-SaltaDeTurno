@@ -1,5 +1,6 @@
 import userService from '../services/userService.js'
 import userDTO from '../DTO/userDTO.js'
+
 const authRouter = {
     async login(req, res) {
         try {
