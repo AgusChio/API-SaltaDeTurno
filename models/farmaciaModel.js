@@ -7,14 +7,14 @@ const farmaciaSchema = new mongoose.Schema({
     ubicacion: { type: String, required: true },
     horario: {
         semana: {
-            dias: { type: String, required: true },
-            apertura: { type: String, required: true },
-            cierre: { type: String, required: true }
+            dias: { type: String, required: false },
+            apertura: { type: String, required: false },
+            cierre: { type: String, required: false }
         },
         finDeSemana: {
-            dias: { type: String, required: true },
-            apertura: { type: String, required: true },
-            cierre: { type: String, required: true }
+            dias: { type: String, required: false },
+            apertura: { type: String, required: false },
+            cierre: { type: String, required: false }
         }
     },
     estado:{
