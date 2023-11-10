@@ -17,6 +17,11 @@ const farmaciaSchema = new mongoose.Schema({
             cierre: { type: String, required: true }
         }
     },
+    estado:{
+        type: String,
+        required: true,
+        enum: ['Activo', 'Cerrado Permanentemente']
+    },
     abierto24Horas: { type: Boolean, default: false },
     deTurno24Horas: { type: Date, required: true },
     imagen: { type: String, required: false },
