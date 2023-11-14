@@ -11,7 +11,8 @@ const userSchema = new mongoose.Schema({
         type: String,
         enum: ['admin', 'user'],
         required: true},
-    modoOscuro: { type: Boolean, default: false }
+    modoOscuro: { type: Boolean, default: false },
+    terminosYCondiciones: { type: Boolean, default: false },
 });
 
 const User = mongoose.model('User', userSchema);
