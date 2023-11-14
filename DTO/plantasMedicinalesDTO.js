@@ -7,3 +7,5 @@ const plantasMedicinalesDTO = (plantaMedicinal) => {
         categorias: plantaMedicinal.categorias
     }
 }
+
+export default plantasMedicinalesDTO;

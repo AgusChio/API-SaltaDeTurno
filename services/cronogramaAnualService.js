@@ -1,4 +1,4 @@
-import CronogramaAnual from "../models/conogramaAnualModel"
+import CronogramaAnual from "../models/conogramaAnualModel.js"
 
 const cronogramaAnualService = {
 

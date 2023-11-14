@@ -9,3 +9,5 @@ plantasMedicinalesRouter.get('/:id', plantasMedicinalesController.getPlantaMedic
 plantasMedicinalesRouter.put('/:id', passport.authenticate('jwt', { session: false }), plantasMedicinalesController.updatePlantaMedicinal);
 plantasMedicinalesRouter.post('/', passport.authenticate('jwt', { session: false }), plantasMedicinalesController.createPlantaMedicinal);
 plantasMedicinalesRouter.delete('/:id', passport.authenticate('jwt', { session: false }), plantasMedicinalesController.deletePlantaMedicinal);
+
+export default plantasMedicinalesRouter;

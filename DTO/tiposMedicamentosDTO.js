@@ -5,3 +5,5 @@ const tiposMedicamentosDTO = (tipoMedicamento) => {
         descripcion:tipoMedicamento.descripcion,
     };
 }
+
+export default tiposMedicamentosDTO;

@@ -1,4 +1,4 @@
-import Medicamento from "../models/medicamentoModel";
+import Medicamento from "../models/medicamentoModel.js";
 
 const medicamentoService = {
     async getAllMedicamentos() {

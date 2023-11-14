@@ -1,6 +1,5 @@
-import inyectablesService from "../services/inyectablesService";
-import inyectablesDTO from "../DTO/inyectablesDTO";
-import inyectables from "../models/inyectablesModel";
+import inyectablesService from "../services/inyectablesService.js";
+import inyectablesDTO from "../DTO/inyectablesDTO.js";
 
 const inyectablesController = {
     async getAllInyectables(req, res) {

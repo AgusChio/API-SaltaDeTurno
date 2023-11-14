@@ -1,4 +1,4 @@
-import Inyectables from "../models/inyectablesModel"
+import Inyectables from "../models/inyectablesModel.js"
 
 const inyectablesService = {
 

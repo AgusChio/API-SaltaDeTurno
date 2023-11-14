@@ -1,4 +1,4 @@
-import FarmaciaQueVacunan from "../models/farmaciasQueVacunanModel"
+import FarmaciaQueVacunan from "../models/farmaciasQueVacunanModel.js"
 
 const farmaciasQueVacunanService = {
     async getAllFarmaciasQueVacunan() {

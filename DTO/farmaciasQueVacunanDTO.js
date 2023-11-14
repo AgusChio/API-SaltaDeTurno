@@ -7,3 +7,5 @@ const farmaciasQueVacunanDTO = (farmaciaQueVacuna) => {
         vacuna: farmaciaQueVacuna.vacuna,
     };
 }
+
+export default farmaciasQueVacunanDTO;

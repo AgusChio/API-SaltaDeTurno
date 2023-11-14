@@ -9,3 +9,5 @@ tiposMedicamentosRouter.get('/:id', tiposMedicamentosController.getTipoMedicamen
 tiposMedicamentosRouter.put('/:id', passport.authenticate('jwt', { session: false }), tiposMedicamentosController.updateTipoMedicamento);
 tiposMedicamentosRouter.post('/', passport.authenticate('jwt', { session: false }), tiposMedicamentosController.createTipoMedicamento);
 tiposMedicamentosRouter.delete('/:id', passport.authenticate('jwt', { session: false }), tiposMedicamentosController.deleteTipoMedicamento);
+
+export default tiposMedicamentosRouter;

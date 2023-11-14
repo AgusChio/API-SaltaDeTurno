@@ -1,8 +1,9 @@
 {
   "name": "api-salta-de-turno",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Api crud para consumir en el proyecto Salta de turno",
-  "main": "index.js",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
     "test": "node --watch .",
     "start": "node ./server.js",
@@ -32,6 +33,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.0.0",
     "nodemailer": "^6.9.7",
+    "passport": "^0.6.0",
     "passport-jwt": "^4.0.1",
     "uuid": "^9.0.1"
   }

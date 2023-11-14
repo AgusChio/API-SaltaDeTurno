@@ -1,4 +1,4 @@
-import Farmacia from "../models/farmaciaModel"
+import Farmacia from "../models/farmaciaModel.js"
 
 const farmaciaService = {
 

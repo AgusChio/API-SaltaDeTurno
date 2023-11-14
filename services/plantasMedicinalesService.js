@@ -1,4 +1,4 @@
-import PlantasMedicinales from "../models/plantasMedicinalesModel"
+import PlantasMedicinales from "../models/plantasMedicinalesModel.js"
 
 const plantasMedicinalesService = {
 

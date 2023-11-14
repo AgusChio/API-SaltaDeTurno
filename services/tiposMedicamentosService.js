@@ -1,4 +1,4 @@
-import TiposMedicamentos from "../models/tiposMedicamentosModel"
+import TiposMedicamentos from "../models/tiposMedicamentosModel.js"
 
 const tiposMedicamentosService = {
 

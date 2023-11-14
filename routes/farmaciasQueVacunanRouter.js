@@ -9,3 +9,5 @@ farmaciasQueVacunanRouter.get('/:id', farmaciasQueVacunanController.getFarmaciaQ
 farmaciasQueVacunanRouter.put('/:id', passport.authenticate('jwt', { session: false }), farmaciasQueVacunanController.updateFarmaciaQueVacuna);
 farmaciasQueVacunanRouter.post('/', passport.authenticate('jwt', { session: false }), farmaciasQueVacunanController.createFarmaciaQueVacuna);
 farmaciasQueVacunanRouter.delete('/:id', passport.authenticate('jwt', { session: false }), farmaciasQueVacunanController.deleteFarmaciaQueVacuna);
+
+export default farmaciasQueVacunanRouter;

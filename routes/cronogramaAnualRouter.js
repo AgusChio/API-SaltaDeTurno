@@ -9,3 +9,5 @@ cronogramaAnualRouter.get('/:id', cronogramaAnualController.getCronogramaAnualBy
 cronogramaAnualRouter.put('/:id', passport.authenticate('jwt', { session: false }), cronogramaAnualController.updateCronogramaAnual);
 cronogramaAnualRouter.post('/', passport.authenticate('jwt', { session: false }), cronogramaAnualController.createCronogramaAnual);
 cronogramaAnualRouter.delete('/:id', passport.authenticate('jwt', { session: false }), cronogramaAnualController.deleteCronogramaAnual);
+
+export default cronogramaAnualRouter;

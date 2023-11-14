@@ -1,6 +1,5 @@
-import tiposMedicamentosService from "../services/tiposMedicamentosService";
-import tiposMedicamentosDTO from "../DTO/tiposMedicamentosDTO";
-import tiposMedicamentos from "../models/tiposMedicamentosModel";
+import tiposMedicamentosService from "../services/tiposMedicamentosService.js";
+import tiposMedicamentosDTO from "../DTO/tiposMedicamentosDTO.js";
 
 const tiposMedicamentosController = {
     async getAllTiposMedicamentos(req, res) {

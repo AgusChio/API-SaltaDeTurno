@@ -1,6 +1,5 @@
-import plantasMedicinalesService from "../services/plantasMedicinalesService";
-import plantasMedicinalesDTO from "../DTO/plantasMedicinalesDTO";
-import plantasMedicinales from "../models/plantasMedicinalesModel";
+import plantasMedicinalesService from '../services/plantasMedicinalesService.js';
+import plantasMedicinalesDTO from '../DTO/plantasMedicinalesDTO.js';
 
 const plantasMedicinalesController = {
     async getAllPlantasMedicinales(req, res) {
@@ -53,3 +52,5 @@ const plantasMedicinalesController = {
         }
     }
 }
+
+export default plantasMedicinalesController;

@@ -7,3 +7,5 @@ const inyectablesDTO = (inyectable) => {
         imagen: inyectable.imagen
     }
 }
+
+export default inyectablesDTO;

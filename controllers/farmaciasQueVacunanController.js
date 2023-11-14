@@ -1,5 +1,4 @@
 import farmaciasQueVacunanService from '../services/farmaciasQueVacunanService.js';
-import FarmaciasQueVacunan from '../models/farmaciasQueVacunanModel.js';
 import farmaciasQueVacunanDTO from '../DTO/farmaciasQueVacunanDTO.js';
 
 const farmaciasQueVacunanController = {

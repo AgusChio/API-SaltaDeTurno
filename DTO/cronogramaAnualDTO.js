@@ -7,3 +7,5 @@ const cronogramaAnualService = (cronogramaAnual) => {
     zona: cronogramaAnual.zona,
     };
 }
+
+export default cronogramaAnualService;

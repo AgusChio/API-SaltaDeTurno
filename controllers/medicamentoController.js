@@ -56,3 +56,5 @@ const medicamentoController = {
         }
     }
 }
+
+export default medicamentoController;

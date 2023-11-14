@@ -7,6 +7,11 @@ const medicamentoSchema = new mongoose.Schema({
     presentacion: { type: String, required: true },
     cantidad: { type: String, required: true },
     codigoNacional: { type: String, required: true },
+    tipoMedicamento: {
+        type: String,
+        required: true,
+        enum: ['Analgésicos', 'Antialérgicos', 'Antidiarreicos', 'Antiinfecciosos', 'Antiinflamatorios', 'Antipiréticos']
+    },
     categoria: { 
         type: String, 
         required: true, 
