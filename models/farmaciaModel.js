@@ -36,7 +36,7 @@ const farmaciaSchema = new mongoose.Schema({
     imagen: { type: String, required: false },
     Zona: {
         type: String,
-        required: true,
+        required: false,
         enum: ['Norte', 'Sur', 'Este', 'Oeste', 'Centro']
     },
 });

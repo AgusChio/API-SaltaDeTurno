@@ -7,7 +7,16 @@ const plantasMedicinalesSchema = new mongoose.Schema({
     organosVegetalesEmpleados: { type: String, required: true },
     categorias: [{
         type: String,
-        enum: ['Digestivas', 'Expectorantes', 'Diuréticas', 'Dérmicas', 'Hepáticas', 'Antiinflamatorias', 'Analgésicas'],
+        enum: [
+            'Digestivas',
+            'Expectorantes', 
+            'Diuréticas', 
+            'Dérmicas', 
+            'Hepáticas', 
+            'Antiinflamatorias', 
+            'Analgésicas', 
+            'Expectorante'
+        ],
         required: true
     }]
 });

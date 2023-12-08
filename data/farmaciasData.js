@@ -58,7 +58,6 @@ export const farmacias = [
         diciembre: [new Date('2023-12-12T08:00:00Z'), new Date('2023-12-27T08:00:00Z')]
         },
     imagen: "",
-    Zona: ""
     },
     {
     nombre: "Santa Laura",
@@ -395,7 +394,6 @@ export const farmacias = [
         diciembre: [new Date('2023-12-12T08:00:00Z'), new Date('2023-12-27T08:00:00Z')]
         },
     imagen: "",
-    Zona: ""
     },
     {
     nombre: "San Francisco",
@@ -1025,7 +1023,6 @@ export const farmacias = [
         diciembre: [new Date('2023-12-14T08:00:00Z'), new Date('2023-12-29T08:00:00Z')]
         },
     imagen: "",
-    Zona: ""
     },
     {
     nombre: "Nueva B & B",
@@ -1049,7 +1046,6 @@ export const farmacias = [
         diciembre: [new Date('2023-12-14T08:00:00Z'), new Date('2023-12-29T08:00:00Z')]
         },
     imagen: "",
-    Zona: ""
     },
     {
     nombre: "Monserrat VI",
@@ -1646,7 +1642,7 @@ export const farmacias = [
         septiembre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
         octubre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
         noviembre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
-        diciembre: [new Date('2023-12-1T08:00:00Z'), new Date('2023-12-16T08:00:00Z'), new Date('2023-12-31T08:00:00Z')]
+        diciembre: [new Date('2023-12-01T08:00:00Z'), new Date('2023-12-16T08:00:00Z'), new Date('2023-12-31T08:00:00Z')]
         },
     imagen: "https://res.cloudinary.com/dbvoybaoy/image/upload/v1699534413/SaltaDeTurnoImages/gj8auosxystvjdxyfdwh.png",
     Zona: "Centro"
@@ -1687,7 +1683,7 @@ export const farmacias = [
         septiembre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
         octubre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
         noviembre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
-        diciembre: [new Date('2023-12-1T08:00:00Z'), new Date('2023-12-16T08:00:00Z'), new Date('2023-12-31T08:00:00Z')]
+        diciembre: [new Date('2023-12-01T08:00:00Z'), new Date('2023-12-16T08:00:00Z'), new Date('2023-12-31T08:00:00Z')]
         },
     imagen: "https://res.cloudinary.com/dbvoybaoy/image/upload/v1699534546/SaltaDeTurnoImages/yq8cpywrcv5ptherp6zq.png",
     Zona: "Sur"
@@ -1734,7 +1730,7 @@ export const farmacias = [
         septiembre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
         octubre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
         noviembre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
-        diciembre: [new Date('2023-12-1T08:00:00Z'), new Date('2023-12-16T08:00:00Z'), new Date('2023-12-31T08:00:00Z')]
+        diciembre: [new Date('2023-12-01T08:00:00Z'), new Date('2023-12-16T08:00:00Z'), new Date('2023-12-31T08:00:00Z')]
         },
     imagen: "https://res.cloudinary.com/dbvoybaoy/image/upload/v1699534639/SaltaDeTurnoImages/wm73mhzkg0cvrstx52ow.png",
     Zona: "Sur"
@@ -1775,7 +1771,7 @@ export const farmacias = [
         septiembre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
         octubre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
         noviembre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
-        diciembre: [new Date('2023-12-1T08:00:00Z'), new Date('2023-12-16T08:00:00Z'), new Date('2023-12-31T08:00:00Z')]
+        diciembre: [new Date('2023-12-01T08:00:00Z'), new Date('2023-12-16T08:00:00Z'), new Date('2023-12-31T08:00:00Z')]
         },
     imagen: "https://res.cloudinary.com/dbvoybaoy/image/upload/v1699534748/SaltaDeTurnoImages/xg3kxh7syionqlspvy61.png",
     Zona: "Centro"
@@ -1820,7 +1816,7 @@ export const farmacias = [
         septiembre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
         octubre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
         noviembre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
-        diciembre: [new Date('2023-12-1T08:00:00Z'), new Date('2023-12-16T08:00:00Z'), new Date('2023-12-31T08:00:00Z')]
+        diciembre: [new Date('2023-12-01T08:00:00Z'), new Date('2023-12-16T08:00:00Z'), new Date('2023-12-31T08:00:00Z')]
         },
     imagen: "https://res.cloudinary.com/dbvoybaoy/image/upload/v1699534850/SaltaDeTurnoImages/avufzsbipoylpt4j4udv.png",
     Zona: "Centro"
@@ -1844,10 +1840,9 @@ export const farmacias = [
         septiembre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
         octubre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
         noviembre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
-        diciembre: [new Date('2023-12-1T08:00:00Z'), new Date('2023-12-16T08:00:00Z'), new Date('2023-12-31T08:00:00Z')]
+        diciembre: [new Date('2023-12-01T08:00:00Z'), new Date('2023-12-16T08:00:00Z'), new Date('2023-12-31T08:00:00Z')]
         },
     imagen: "https://res.cloudinary.com/dbvoybaoy/image/upload/v1699534984/SaltaDeTurnoImages/fwpflq9shmyhue4ocljb.png",
-    Zona: ""
     },
     {
     nombre: "Del Valle XIII",
@@ -1885,7 +1880,7 @@ export const farmacias = [
         septiembre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
         octubre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
         noviembre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
-        diciembre: [new Date('2023-12-1T08:00:00Z'), new Date('2023-12-16T08:00:00Z'), new Date('2023-12-31T08:00:00Z')]
+        diciembre: [new Date('2023-12-01T08:00:00Z'), new Date('2023-12-16T08:00:00Z'), new Date('2023-12-31T08:00:00Z')]
         },
     imagen: "https://res.cloudinary.com/dbvoybaoy/image/upload/v1699535144/SaltaDeTurnoImages/jh0bu77vmhpup8dsuzar.png",
     Zona: "Sur"
@@ -1930,7 +1925,7 @@ export const farmacias = [
         septiembre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
         octubre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
         noviembre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
-        diciembre: [new Date('2023-12-1T08:00:00Z'), new Date('2023-12-16T08:00:00Z'), new Date('2023-12-31T08:00:00Z')]
+        diciembre: [new Date('2023-12-01T08:00:00Z'), new Date('2023-12-16T08:00:00Z'), new Date('2023-12-31T08:00:00Z')]
         },
     imagen: "https://res.cloudinary.com/dbvoybaoy/image/upload/v1699535393/SaltaDeTurnoImages/sz1dowrzobwnysiu8dtd.png",
     Zona: "Sur"
@@ -1975,7 +1970,7 @@ export const farmacias = [
         septiembre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
         octubre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
         noviembre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
-        diciembre: [new Date('2023-12-1T08:00:00Z'), new Date('2023-12-16T08:00:00Z'), new Date('2023-12-31T08:00:00Z')]
+        diciembre: [new Date('2023-12-01T08:00:00Z'), new Date('2023-12-16T08:00:00Z'), new Date('2023-12-31T08:00:00Z')]
         },
     imagen: "https://res.cloudinary.com/dbvoybaoy/image/upload/v1699535528/SaltaDeTurnoImages/rnduup4hxrazzmlzrjc7.png",
     Zona: "Oeste"
@@ -2751,7 +2746,6 @@ export const farmacias = [
         diciembre: [new Date('2023-12-04T08:00:00Z'), new Date('2023-12-19T08:00:00Z')]
         },
     imagen: "",
-    Zona: ""
     },
     {
     nombre: "San Bernardo",
@@ -2892,7 +2886,6 @@ export const farmacias = [
         diciembre: [new Date('2023-12-04T08:00:00Z'), new Date('2023-12-19T08:00:00Z')]
         },
     imagen: "",
-    Zona: ""
     },
     {
     nombre: "Don Emilio",
@@ -2916,7 +2909,6 @@ export const farmacias = [
         diciembre: [new Date('2023-12-04T08:00:00Z'), new Date('2023-12-19T08:00:00Z')]
         },
     imagen: "",
-    Zona: ""
     },
     {
     nombre: "Miralles",
@@ -3802,7 +3794,6 @@ export const farmacias = [
         diciembre: [new Date('2023-12-07T08:00:00Z'), new Date('2023-12-22T08:00:00Z')]
         },
     imagen: "",
-    Zona: ""
     },
     {
     nombre: "Apolo",
@@ -3927,7 +3918,6 @@ export const farmacias = [
         diciembre: [new Date('2023-12-07T08:00:00Z'), new Date('2023-12-22T08:00:00Z')]
         },
     imagen: "",
-    Zona: ""
     },
     {
     nombre: "Del Valle XII",
@@ -4609,7 +4599,6 @@ export const farmacias = [
         diciembre: [new Date('2023-12-09T08:00:00Z'), new Date('2023-12-24T08:00:00Z')]
         },
     imagen: "",
-    Zona: ""
     },
     {
     nombre: "Nueva Entre Ríos",
@@ -5533,7 +5522,7 @@ export const farmacias = [
             cerrado: true, 
             }
         },
-    estado: "Cerrar Permanentemente", 
+    estado: "Cerrado Permanentemente", 
     abierto24Horas: false,
     turnos: {
         enero: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
@@ -5550,7 +5539,6 @@ export const farmacias = [
         diciembre: [new Date('2023-12-11T08:00:00Z'), new Date('2023-12-26T08:00:00Z')]
         },
     imagen: "",
-    Zona: ""
     },
     {
     nombre: "San Francisco I",
@@ -5595,31 +5583,27 @@ export const farmacias = [
     imagen: "https://res.cloudinary.com/dbvoybaoy/image/upload/v1699584087/SaltaDeTurnoImages/ztqn6wvz75zqjtjobf7i.png",
     Zona: "Centro"
     },
-    {
-    nombre: "Del Valle XIV",
-    direccion: "Avda. Independencia 824",
-    telefono: "+5493874260252",
-    ubicacion: "https://maps.app.goo.gl/LshmsEFroy5PsgST8",
-    horario: {
-        semana: {
-            dias: "Lunes, Martes, Miércoles, Jueves, Viernes",
-            apertura: "08:00",
-            cierre: "00:00"
-            },
-        finDeSemana: {
-            dias: "Sábado",
-            apertura: "09:00",
-            cierre: "00:00",
-
-            dias2: "Domingo",
-            apertura2: "09:00",
-            cierre2: "00:00",
-            cerrado: false, 
-            }
+    {nombre:"Del Valle XIV",
+    direccion:"Avda. Independencia 824",
+    telefono:"+5493874260252",
+    ubicacion:"https://maps.app.goo.gl/LshmsEFroy5PsgST8",
+    horario:{
+        semana:{
+            dias:"Lunes, Martes, Miércoles, Jueves, Viernes",
+            apertura:"08:00","cierre":"00:00"
         },
-    estado: "Activo", 
-    abierto24Horas: false,
-    turnos: {
+        finDeSemana:{
+            dias:"Sábado","apertura":"09:00",
+            cierre:"00:00",
+            dias2:"Domingo",
+            apertura2:"09:00",
+            cierre2:"00:00",
+            cerrado:false
+        }
+    },
+    estado: Activo,
+    abierto24Horas:false,
+    turnos:{
         enero: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
         febrero: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
         marzo: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
@@ -5632,8 +5616,8 @@ export const farmacias = [
         octubre: [new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z'), new Date('2023-11-14T08:00:00Z')],
         noviembre: [new Date('2023-11-11T08:00:00Z'), new Date('2023-11-26T08:00:00Z')],
         diciembre: [new Date('2023-12-11T08:00:00Z'), new Date('2023-12-26T08:00:00Z')]
-        },
-    imagen: "https://res.cloudinary.com/dbvoybaoy/image/upload/v1699584428/SaltaDeTurnoImages/rrolbjtjujud4dawgbb4.png",
-    Zona: "Sur"
-    }
+    },
+    imagen:"https://res.cloudinary.com/dbvoybaoy/image/upload/v1699584428/SaltaDeTurnoImages/rrolbjtjujud4dawgbb4.png",
+    Zona:"Sur",
+    },
 ]

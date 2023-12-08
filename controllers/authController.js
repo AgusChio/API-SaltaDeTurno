@@ -26,8 +26,7 @@ const authRouter = {
             const userInDB = await userService.getUserByEmail(req.body.email)
             if (userInDB) return res.status(409).json({ "message": "Email already in use" })
             const newUser = await userService.createUser(req.body)
-            sendEmail(newUser.email, newUser._id)
-            return res.status(202).json({ status: "ok", "message": "The account was created successfully. Please verify your email to activate your account." })
+            return res.status(202).json({ status: "ok", "message": "The account was created successfully." })
         } catch (error) {
             console.log(error)
             return res.status(500).json({ error })

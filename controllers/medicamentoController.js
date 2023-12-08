@@ -1,5 +1,4 @@
 import medicamentoDTO from '../DTO/medicamentoDTO.js';
-import medicamento from '../models/medicamentoModel.js';
 import medicamentoService from '../services/medicamentoService.js';
 
 const medicamentoController = {
@@ -27,8 +26,7 @@ const medicamentoController = {
 
     async createMedicamento(req, res) {
         try {
-            const medicamentoData = medicamento.newMedicamento(req.body)
-            const newMedicamento = await medicamentoService.createMedicamento(medicamentoData)
+            const newMedicamento = await medicamentoService.createMedicamento(req.body)
             res.status(201).json({ success: true, new_medicamento: newMedicamento })
         } catch (error) {
             res.status(500).json({ message: 'Internal server error' })

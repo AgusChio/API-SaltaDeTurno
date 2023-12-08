@@ -1,5 +1,4 @@
 import farmaciaDTO from '../DTO/farmaciaDTO.js';
-import farmacia from '../models/farmaciaModel.js';
 import farmaciaService from '../services/farmaciaService.js';
 
 const farmaciaController = {
@@ -27,8 +26,7 @@ const farmaciaController = {
 
     async createFarmacia(req, res) {
         try {
-            const farmaciaData = farmacia.newFarmacia(req.body)
-            const newFarmacia = await farmaciaService.createFarmacia(farmaciaData)
+            const newFarmacia = await farmaciaService.createFarmacia(req.body)
             res.status(201).json({ success: true, new_farmacia: newFarmacia })
         } catch (error) {
             res.status(500).json({ message: 'Internal server error' })

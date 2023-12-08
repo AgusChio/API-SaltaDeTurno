@@ -1,5 +1,5 @@
 import plantasMedicinalesService from '../services/plantasMedicinalesService.js';
-import plantasMedicinalesDTO from '../DTO/plantasMedicinalesDTO.js';
+
 
 const plantasMedicinalesController = {
     async getAllPlantasMedicinales(req, res) {
@@ -25,8 +25,7 @@ const plantasMedicinalesController = {
 
     async createPlantaMedicinal(req, res) {
         try {
-            const plantaMedicinal = await plantasMedicinalesService.createPlantaMedicinal(req.body);
-            const plantaMedicinalDTO = plantasMedicinalesDTO(plantaMedicinal);
+            const plantaMedicinalDTO = plantasMedicinalesDTO(req.body);
             return res.status(201).json(plantaMedicinalDTO);
         } catch (error) {
             return res.status(500).json({ error });
