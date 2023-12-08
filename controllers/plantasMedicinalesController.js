@@ -5,8 +5,7 @@ const plantasMedicinalesController = {
     async getAllPlantasMedicinales(req, res) {
         try {
             const plantasMedicinales = await plantasMedicinalesService.getAllPlantasMedicinales();
-            const plantasMedicinalesDTO = plantasMedicinales.map((plantaMedicinal) => plantasMedicinalesDTO(plantaMedicinal));
-            return res.status(200).json(plantasMedicinalesDTO);
+            return res.status(200).json(plantasMedicinales);
         } catch (error) {
             return res.status(500).json({ error });
         }
