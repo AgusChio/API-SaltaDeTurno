@@ -11,12 +11,12 @@ const indexRouter = express();
 
 indexRouter.use(express.json());
 
-indexRouter.use('/api/auth', authRouter);
-indexRouter.use('/api/medicamentos', medicamentoRouter);
-indexRouter.use('/api/farmacias', farmaciaRouter);
-indexRouter.use('/api/inyectables', inyectablesRouter);
-indexRouter.use('/api/plantasmedicinales', plantasMedicinalesRouter);
-indexRouter.use('/api/cronogramaanual', cronogramaAnualRouter);
-indexRouter.use('/api/farmaciasquevacunan', farmaciasQueVacunanRouter);
+indexRouter.use('/auth', authRouter);
+indexRouter.use('/medicamentos', medicamentoRouter);
+indexRouter.use('/farmacias', farmaciaRouter);
+indexRouter.use('/inyectables', inyectablesRouter);
+indexRouter.use('/plantasmedicinales', plantasMedicinalesRouter);
+indexRouter.use('/cronogramaanual', cronogramaAnualRouter);
+indexRouter.use('/farmaciasquevacunan', farmaciasQueVacunanRouter);
 
 export default indexRouter;
