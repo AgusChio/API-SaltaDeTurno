@@ -6,26 +6,21 @@ const farmaciaSchema = new mongoose.Schema({
     telefono: { type: String, required: false },
     ubicacion: { type: String, required: false },
     horario: {
-        horario: {
-            semana: {
-                dias: { type: String, required: false },
-                apertura: { type: String, required: false },
-                cierre: { type: String, required: false },
-
-                apertura2: { type: String, required: false },
-                cierre2: { type: String, required: false }
-            },
-            finDeSemana: {
-                dias: { type: String, required: false },
-                apertura: { type: String, required: false },
-                cierre: { type: String, required: false },
-
-                dias2: { type: String, required: false },
-                apertura2: { type: String, required: false },
-                cierre2: { type: String, required: false },
-
-                cerrado: { type: Boolean, required: false }
-            }
+        semana: {
+            dias: { type: String, required: false },
+            apertura: { type: String, required: false },
+            cierre: { type: String, required: false },
+            apertura2: { type: String, required: false },
+            cierre2: { type: String, required: false },
+        },
+        finDeSemana: {
+            dias: { type: String, required: false },
+            apertura: { type: String, required: false },
+            cierre: { type: String, required: false },
+            dias2: { type: String, required: false },
+            apertura2: { type: String, required: false },
+            cierre2: { type: String, required: false },
+            cerrado: { type: Boolean, required: false },
         },
     },
     estado: {
@@ -34,7 +29,10 @@ const farmaciaSchema = new mongoose.Schema({
         enum: ['Activo', 'Cerrado Permanentemente']
     },
     abierto24Horas: { type: Boolean, default: false },
-    deTurno24Horas: { type: Date, required: false },
+    turnos: {
+        type: Map,
+        of: [Date]
+    },
     imagen: { type: String, required: false },
     Zona: {
         type: String,
@@ -45,4 +43,4 @@ const farmaciaSchema = new mongoose.Schema({
 
 const Farmacia = mongoose.model('Farmacia', farmaciaSchema);
 
-export default Farmacia
+export default Farmacia;
