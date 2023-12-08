@@ -409,9 +409,9 @@ export const farmacias = [
     },
     {
     nombre: "Sagrada Familia",
-    direccion: "San Juan 1012",
+    direccion: "San Juan 952",
     telefono: "+5493874216099",
-    ubicacion: "https://maps.app.goo.gl/XdDigErnBfhgZrpz7",
+    ubicacion: "https://maps.app.goo.gl/MmiGq6heRYaobY3X6",
     horario: {
         semana: {
             dias: "Lunes, Martes, Miércoles, Jueves, Viernes",
