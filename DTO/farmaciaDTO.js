@@ -4,9 +4,13 @@ const farmaciaDTO = (farmacia) => {
         nombre: farmacia.nombre,
         direccion: farmacia.direccion,
         telefono: farmacia.telefono,
-        maps: farmacia.maps,
+        ubicacion: farmacia.ubicacion,
         horario: farmacia.horario,
-        imagen: farmacia.imagen
+        estado: farmacia.estado,
+        abierto24Horas: farmacia.abierto24Horas,
+        turnos: farmacia.turnos,
+        imagen: farmacia.imagen,
+        Zona: farmacia.Zona,
     };
 }
 
