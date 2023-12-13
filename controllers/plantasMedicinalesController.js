@@ -11,18 +11,18 @@ const plantasMedicinalesController = {
             response.count = plantasMedicinalesResponse.length;
             return res.status(200).json(response);
         } catch (error) {
-            return res.status(500).json({ error });
+            return res.status(500).json({ error: error.message });
         }
     },
 
     async getPlantaMedicinalById(req, res) {
         try {
             const plantaMedicinal = await plantasMedicinalesService.getById(req.params.id);
-            if (!plantaMedicin9al) return res.status(404).json({ message: "PlantaMedicinal not found" });
+            if (!plantaMedicinal) return res.status(404).json({ message: "PlantaMedicinal not found" });
             const plantaMedicinalDTO = plantasMedicinalesDTO(plantaMedicinal);
             return res.status(200).json(plantaMedicinalDTO);
         } catch (error) {
-            return res.status(500).json({ error });
+            return res.status(500).json({ error: error.messages });
         }
     },
 
@@ -31,7 +31,7 @@ const plantasMedicinalesController = {
             const plantaMedicinalDTO = plantasMedicinalesDTO(req.body);
             return res.status(201).json(plantaMedicinalDTO);
         } catch (error) {
-            return res.status(500).json({ error });
+            return res.status(500).json({ error: error.message });
         }
     },
 
@@ -41,16 +41,16 @@ const plantasMedicinalesController = {
             const plantaMedicinalDTO = plantasMedicinalesDTO(plantaMedicinal);
             return res.status(200).json(plantaMedicinalDTO);
         } catch (error) {
-            return res.status(500).json({ error });
+            return res.status(500).json({ error: error.message });
         }
     },
 
     async deletePlantaMedicinal(req, res) {
         try {
             await plantasMedicinalesService.deletePlantaMedicinal(req.params.id);
-            return res.status(200).json({ message: "PlantaMedicinal deleted" });
+            return res.status(200).json({ message: "Planta Medicinal deleted" });
         } catch (error) {
-            return res.status(500).json({ error });
+            return res.status(500).json({ error: error.message });
         }
     }
 }

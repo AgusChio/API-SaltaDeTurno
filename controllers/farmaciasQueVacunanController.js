@@ -8,7 +8,7 @@ const farmaciasQueVacunanController = {
             const farmaciasQueVacunanDTO = farmaciasQueVacunan.map((farmaciaQueVacuna) => farmaciasQueVacunanDTO(farmaciaQueVacuna));
             return res.status(200).json(farmaciasQueVacunanDTO);
         } catch (error) {
-            return res.status(500).json({ error });
+            return res.status(500).json({ error: error.message });
         }
     },
 
@@ -19,7 +19,7 @@ const farmaciasQueVacunanController = {
             const farmaciaQueVacunaDTO = farmaciasQueVacunanDTO(farmaciaQueVacuna);
             return res.status(200).json(farmaciaQueVacunaDTO);
         } catch (error) {
-            return res.status(500).json({ error });
+            return res.status(500).json({ error: error.message });
         }
     },
 
@@ -29,7 +29,7 @@ const farmaciasQueVacunanController = {
             const farmaciaQueVacunaDTO = farmaciasQueVacunanDTO(farmaciaQueVacuna);
             return res.status(201).json(farmaciaQueVacunaDTO);
         } catch (error) {
-            return res.status(500).json({ error });
+            return res.status(500).json({ error: error.message });
         }
     },
 
@@ -39,7 +39,7 @@ const farmaciasQueVacunanController = {
             const farmaciaQueVacunaDTO = farmaciasQueVacunanDTO(farmaciaQueVacuna);
             return res.status(200).json(farmaciaQueVacunaDTO);
         } catch (error) {
-            return res.status(500).json({ error });
+            return res.status(500).json({ error: error.message });
         }
     },
 
@@ -48,7 +48,7 @@ const farmaciasQueVacunanController = {
             const farmaciaQueVacuna = await farmaciasQueVacunanService.deleteFarmaciaQueVacuna(req.params.id);
             return res.status(200).json({ success: true, deleted_farmaciaQueVacuna: farmaciaQueVacuna });
         } catch (error) {
-            return res.status(500).json({ error });
+            return res.status(500).json({ error: error.message });
         }
     }
 }

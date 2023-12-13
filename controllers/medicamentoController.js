@@ -11,7 +11,7 @@ const medicamentoController = {
             response.count = medicamentosResponse.length
             res.status(200).json(response)
         } catch (error) {
-            res.status(500).json({ error: error })
+            res.status(500).json({ error: error.message })
         }
     },
 
@@ -20,7 +20,7 @@ const medicamentoController = {
             const medicamento = await medicamentoService.getById(req.params.id)
             res.status(200).json(medicamento)
         } catch (error) {
-            res.status(500).json({ error: error })
+            res.status(500).json({ error: error.message })
         }
     },
 
@@ -29,7 +29,7 @@ const medicamentoController = {
             const newMedicamento = await medicamentoService.createMedicamento(req.body)
             res.status(201).json({ success: true, new_medicamento: newMedicamento })
         } catch (error) {
-            res.status(500).json({ message: 'Internal server error' })
+            res.status(500).json({ error: error.message })
         }
     },
 
@@ -41,7 +41,7 @@ const medicamentoController = {
             res.status(200).json({ success: true, updated_medicamento: updatedMedicamento });
         } catch (error) {
             console.error(error);
-            res.status(500).json({ message: 'Internal server error' });
+            res.status(500).json({ error: error.message });
         }
     },
 
@@ -50,7 +50,7 @@ const medicamentoController = {
             const deletedMedicamento = medicamentoService.deleteMedicamento(req.params.id)
             res.status(200).json({ success: true, deleted_medicamento: deletedMedicamento })
         } catch (error) {
-            res.status(500).json({ message: 'Internal server error' })
+            res.status(500).json({ error: error.message })
         }
     }
 }

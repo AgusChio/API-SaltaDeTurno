@@ -18,7 +18,7 @@ const inyectablesController = {
             const inyectableDTO = inyectablesDTO(inyectable);
             return res.status(200).json(inyectableDTO);
         } catch (error) {
-            return res.status(500).json({ error });
+            return res.status(500).json({ error: error.message });
         }
     },
 
@@ -28,7 +28,7 @@ const inyectablesController = {
             const inyectableDTO = inyectablesDTO(inyectable);
             return res.status(201).json(inyectableDTO);
         } catch (error) {
-            return res.status(500).json({ error });
+            return res.status(500).json({ error: error.messager });
         }
     },
 
@@ -38,7 +38,7 @@ const inyectablesController = {
             const inyectableDTO = inyectablesDTO(inyectable);
             return res.status(200).json(inyectableDTO);
         } catch (error) {
-            return res.status(500).json({ error });
+            return res.status(500).json({ error: error.message });
         }
     },
 
@@ -48,7 +48,7 @@ const inyectablesController = {
             const inyectableDTO = inyectablesDTO(inyectable);
             return res.status(200).json(inyectableDTO);
         } catch (error) {
-            return res.status(500).json({ error });
+            return res.status(500).json({ error: error.message });
         }
     }
 }

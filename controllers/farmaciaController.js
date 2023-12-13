@@ -11,7 +11,7 @@ const farmaciaController = {
             response.count = farmaciasResponse.length
             res.status(200).json(response)
         } catch (error) {
-            res.status(500).json({ error: error })
+            res.status(500).json({ error: error.message })
         }
     },
 
@@ -20,7 +20,7 @@ const farmaciaController = {
             const farmacia = await farmaciaService.getById(req.params.id)
             res.status(200).json(farmacia)
         } catch (error) {
-            res.status(500).json({ error: error })
+            res.status(500).json({ error: error.message })
         }
     },
 
@@ -29,7 +29,7 @@ const farmaciaController = {
             const newFarmacia = await farmaciaService.createFarmacia(req.body)
             res.status(201).json({ success: true, new_farmacia: newFarmacia })
         } catch (error) {
-            res.status(500).json({ message: 'Internal server error' })
+            res.status(500).json({ error: error.message })
         }
     },
 
@@ -41,7 +41,7 @@ const farmaciaController = {
             res.status(200).json({ success: true, updated_farmacia: updatedFarmacia });
         } catch (error) {
             console.error(error);
-            res.status(500).json({ message: 'Internal server error' });
+            res.status(500).json({ error: error.message });
         }
     },
 
@@ -50,7 +50,7 @@ const farmaciaController = {
             const deletedFarmacia = farmaciaService.deleteFarmacia(req.params.id)
             res.status(200).json({ success: true, deleted_farmacia: deletedFarmacia })
         } catch (error) {
-            res.status(500).json({ message: 'Internal server error' })
+            res.status(500).json({ error: error.message })
         }
     }
 }
