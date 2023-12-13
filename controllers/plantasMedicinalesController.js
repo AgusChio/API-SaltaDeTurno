@@ -2,12 +2,14 @@ import plantasMedicinalesDTO from '../DTO/plantasMedicinalesDTO.js';
 import plantasMedicinalesService from '../services/plantasMedicinalesService.js';
 
 const plantasMedicinalesController = {
-
     async getAllPlantasMedicinales(req, res) {
         try {
-            const plantasMedicinales = await plantasMedicinalesService.getAll();
-            const plantasMedicinalesDTO = plantasMedicinales.map((plantaMedicinal) => plantasMedicinalesDTO(plantaMedicinal));
-            return res.status(200).json(plantasMedicinalesDTO);
+            const plantasMedicinales = await plantasMedicinalesService.getAllPlantasMedicinales();
+            const response = {};
+            const plantasMedicinalesResponse = plantasMedicinales.map(plantasMedicinalesDTO);
+            response.plantasMedicinales = plantasMedicinalesResponse;
+            response.count = plantasMedicinalesResponse.length;
+            return res.status(200).json(response);
         } catch (error) {
             return res.status(500).json({ error });
         }
