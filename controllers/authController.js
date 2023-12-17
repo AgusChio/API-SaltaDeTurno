@@ -21,6 +21,7 @@ const authRouter = {
             return res.status(500).json({ error: error.message })
         }
     },
+
     async register(req, res) {
         try {
             if (!req.body.password) {
@@ -33,12 +34,15 @@ const authRouter = {
             }
 
             const newUser = await userService.createUser(req.body);
-            return res.status(201).json({ "message": "User created successfully", newUser});
+            const userResponse = userDTO(newUser);
+
+            return res.status(201).json({ "message": "User created successfully", user: userResponse });
         } catch (error) {
             console.log(error);
             return res.status(500).json({ "error": error.message });
         }
     },
+
     async verifyAccount(req, res) {
         try {
             if (req.query.id) {
