@@ -32,8 +32,13 @@ const userService = {
     },
     
     async hashPasswordAsync(password) {
-        const saltRounds = 10;
-        return bcrypt.hash(password, saltRounds);
+        try {
+            const saltRounds = 10;
+            return await bcrypt.hash(password, saltRounds);
+        } catch (error) {
+            console.error("Error hashing password:", error);
+            throw error;
+        }
     },
 
     async update(id, update){
