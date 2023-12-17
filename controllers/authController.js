@@ -18,7 +18,7 @@ const authRouter = {
 
             return res.status(200).json({ "message": "Login successful.", user, token })
         } catch (error) {
-            return res.status(500).json({ error })
+            return res.status(500).json({ error: error.messages })
         }
     },
     async register(req, res) {
@@ -29,7 +29,7 @@ const authRouter = {
             return res.status(202).json({ status: "ok", "message": "The account was created successfully." })
         } catch (error) {
             console.log(error)
-            return res.status(500).json({ error })
+            return res.status(500).json({ error: error.messages })
         }
     },
     async verifyAccount(req, res) {
@@ -43,7 +43,7 @@ const authRouter = {
                 }
             }
         } catch (error) {
-            return res.status(500).json({ error })
+            return res.status(500).json({ error: error.messages })
         }
     },
     async loginWithToken(req, res) {
@@ -60,7 +60,7 @@ const authRouter = {
             }
             return res.status(400).json({ message: '' })
         } catch (error) {
-            return res.status(500).json({ error })
+            return res.status(500).json({ error: error.messages })
         }
     },
     async getApiKey(req, res) {
@@ -68,7 +68,7 @@ const authRouter = {
             const user = await userService.getUserByEmail(req.user.email)
             res.status(200).json({ api_key: user.apiKey })
         } catch (error) {
-            return res.status(500).json({ error })
+            return res.status(500).json({ error: error.messages })
         }
     }
 }
