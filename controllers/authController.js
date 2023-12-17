@@ -23,6 +23,7 @@ const authRouter = {
     },
 
     async register(req, res) {
+        console.log(req.body);
         try {
             if (!req.body.password) {
                 return res.status(400).json({ "message": "Password is required" });
