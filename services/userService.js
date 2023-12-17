@@ -9,7 +9,7 @@ const userService = {
             const user = await User.findOne({email})
             return user
         } catch (error) {
-            throw new Error(error)
+            throw new Error(error.message)
         }
     },
     async getUser(obj){
@@ -17,19 +17,25 @@ const userService = {
             const user = await User.findOne( obj )
             return user
         } catch (error) {
-            throw new Error(error)
+            throw new Error(error.message)
         }
     },
-    async createUser( data ){
+    async createUser(data) {
         try {
-            const encriptPassword = this.hashPassword( data.password )
-            data.password = encriptPassword
-            const newUser = await User.create( data )
-            return newUser
+            const encriptPassword = await this.hashPasswordAsync(data.password);
+            data.password = encriptPassword;
+            const newUser = await User.create(data);
+            return newUser;
         } catch (error) {
-            throw new Error(error)
+            throw new Error(error.message);
         }
     },
+    
+    async hashPasswordAsync(password) {
+        const saltRounds = 10;
+        return bcrypt.hash(password, saltRounds);
+    },
+
     async update(id, update){
         try {
             const user = await User.findOneAndUpdate( {_id:id}, update, {new:true} )
@@ -46,8 +52,9 @@ const userService = {
     verifyPassword( requestPassword, userPassword ){
         return bcrypt.compareSync( requestPassword, userPassword )
     },
-    hashPassword( password ){
-        return bcrypt.hashSync( password, 10 )
+    hashPassword(password) {
+        const saltRounds = 10;
+        return bcrypt.hashSync(password, saltRounds);
     },
     generateKey(){
         return v4()
