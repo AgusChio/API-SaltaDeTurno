@@ -23,13 +23,20 @@ const authRouter = {
     },
     async register(req, res) {
         try {
-            const userInDB = await userService.getUserByEmail(req.body.email)
-            if (userInDB) return res.status(409).json({ "message": "Email already in use" })
-            const newUser = await userService.createUser(req.body)
-            return res.status(202).json({ status: "ok", "message": "The account was created successfully." })
+            if (!req.body.password) {
+                return res.status(400).json({ "message": "Password is required" });
+            }
+
+            const userInDB = await userService.getUserByEmail(req.body.email);
+            if (userInDB) {
+                return res.status(409).json({ "message": "Email already in use" });
+            }
+
+            const newUser = await userService.createUser(req.body);
+            return res.status(201).json({ "message": "User created successfully", newUser});
         } catch (error) {
-            console.log(error)
-            return res.status(500).json({ error: error.message })
+            console.log(error);
+            return res.status(500).json({ "error": error.message });
         }
     },
     async verifyAccount(req, res) {

@@ -20,8 +20,12 @@ const userService = {
             throw new Error(error.message)
         }
     },
+
     async createUser(data) {
         try {
+            if (!data.password) {
+                throw new Error("Password is required");
+            }
             const encriptPassword = await this.hashPasswordAsync(data.password);
             data.password = encriptPassword;
             const newUser = await User.create(data);
