@@ -7,6 +7,7 @@ const medicamentoDTO = (medicamento) => {
         presentacion: medicamento.presentacion,
         cantidad: medicamento.cantidad,
         codigoNacional: medicamento.codigoNacional,
+        atc: medicamento.atc,
         categoria: medicamento.categoria,
     };
 }
