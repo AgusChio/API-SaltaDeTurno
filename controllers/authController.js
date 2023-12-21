@@ -6,11 +6,11 @@ const authRouter = {
         try {
             const userInDB = await userService.getUserByEmail(req.body.email);
     
-            if (!userInDB) return res.status(401).json({ "message": "The provided credentials are invalid." });
+            if (!userInDB) return res.status(401).json({ "message": "El correo o la contraseña son incorrectos." });
     
             const validPassword = userService.verifyPassword(req.body.password, userInDB.password);
     
-            if (!validPassword) return res.status(401).json({ "message": "The provided credentials are invalid." });
+            if (!validPassword) return res.status(401).json({ "message": "El correo o la contraseña son incorrectos." });
     
             const user = userDTO(userInDB);
     
@@ -32,12 +32,12 @@ const authRouter = {
     async register(req, res) {
         try {
             if (!req.body.password) {
-                return res.status(400).json({ "message": "Password is required" });
+                return res.status(400).json({ "message": "La contraseña es necesaria" });
             }
     
             const userInDB = await userService.getUserByEmail(req.body.email);
             if (userInDB) {
-                return res.status(409).json({ "message": "Email already in use" });
+                return res.status(409).json({ "message": "Este email esta en uso" });
             }
     
             const newUser = await userService.createUser(req.body);
